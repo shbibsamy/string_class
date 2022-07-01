@@ -20,27 +20,29 @@
             <input type='submit' name='submit'>
         </fieldset>
     </form>
-    <div class='result'>
+    <?php
+    echo "<div class='result'>
         <div class='function'>
-            <h2>Function 1:</h2>
+            <h2>Method 1: indexOf()</h2>
             <span></span>
         </div>
         <div class='function'>
-            <h2>Function 2:</h2>
+            <h2>Method 2: typeof()</h2>
             <span></span>
         </div>
         <div class='function'>
-            <h2>Function 3:</h2>
+            <h2>Method 3: toUppercase()</h2>
             <span></span>
         </div>
         <div class='function'>
-            <h2>Function 4:</h2>
+            <h2>Method 4: includes()</h2>
             <span></span>
         </div>
         <div class='function'>
-            <h2>Function 5:</h2>
+            <h2>Method 5: at()</h2>
             <span></span>
         </div>
-    </div>
+    </div>";
+    ?>
 </body>
 </html>
