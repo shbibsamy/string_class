@@ -15,16 +15,26 @@
                 <span>
                     Input a string to test the functionality of my new class.
                 </span>
-                <input type='text' name='my-string'>
+                <input type='text' name='myString'>
             </label>
+            <br>
+            <label>
+                <span>
+                    Input a string to test the previous string with.
+                </span>
+                <input type='text' name='testString'>
+            </label>
+            <br>
             <input type='submit' name='submit'>
         </fieldset>
     </form>
     <?php
+    require 'assets/scripts/stringTest.php';
+
     echo "<div class='result'>
         <div class='function'>
             <h2>Method 1: indexOf()</h2>
-            <span></span>
+            <span>The index of the string $testString in your string $getStringResult is $indexOfResult.</span>
         </div>
         <div class='function'>
             <h2>Method 2: typeof()</h2>
