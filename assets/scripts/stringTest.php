@@ -8,10 +8,11 @@
     $indexOfResult = '';
 
     if (isset($_POST['myString'])  && isset($_POST['testString'])) {
-        $setStringResult = $myString -> setString(htmlspecialchars($_POST['myString'])). '<br><br>';
+        $setStringResult = $myString -> setString(htmlspecialchars($_POST['myString']));
         $testString = $myString -> setTestString(htmlspecialchars($_POST['testString']));
-        $getStringResult = $myString -> getString(). '<br><br>';
+        $getStringResult = $myString -> getString();
         $indexOfResult = $myString -> indexOf();
+        $toUppercaseResult = $myString -> toUppercase();
     }
 
 ?>  

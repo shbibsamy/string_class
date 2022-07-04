@@ -34,7 +34,7 @@
     echo "<div class='result'>
         <div class='function'>
             <h2>Method 1: indexOf()</h2>
-            <span>The index of the string $testString in your string $getStringResult is $indexOfResult.</span>
+            <span>Your string was: '$getStringResult'. You searched for '$testString'. Your string was found at index: '$indexOfResult'.</span>
         </div>
         <div class='function'>
             <h2>Method 2: typeof()</h2>
@@ -42,7 +42,7 @@
         </div>
         <div class='function'>
             <h2>Method 3: toUppercase()</h2>
-            <span></span>
+            <span>$toUppercaseResult</span>
         </div>
         <div class='function'>
             <h2>Method 4: includes()</h2>
