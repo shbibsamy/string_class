@@ -30,8 +30,8 @@
     </form>
     <?php
     require 'assets/scripts/stringTest.php';
-
-    echo "<div class='result'>
+    if (isset($_POST['submit'])) {
+        echo "<div class='result'>
         <div class='function'>
             <h2>Method 1: indexOf()</h2>
             <span>Your string was: '$getStringResult'. You searched for '$testString'. Your string was found at index: '$indexOfResult'.</span>
@@ -54,6 +54,8 @@
         </div>
     </div>
         ";
+    }
+    
     ?>
 </body>
 </html>
