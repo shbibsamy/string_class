@@ -4,12 +4,10 @@
         protected $test_string;
         protected $string_output;
 
-        public function setString($new_string) {
-            return htmlspecialchars($this -> string_input = $new_string);
-        }
-
-        public function setTestString($new_test_string) {
-            return htmlspecialchars($this -> test_string = $new_test_string);
+        public function __construct($new_string, $new_test_string)
+        {
+            htmlspecialchars($this -> string_input = $new_string);
+            htmlspecialchars($this -> test_string = $new_test_string);
         }
 
         public function getString() {
