@@ -8,6 +8,7 @@
     $indexOfResult = '';
 
     if (isset($_POST['myString'])  && isset($_POST['testString'])) {
+        $testString = $_POST['testString'];
         $myString = new StringClass(htmlspecialchars($_POST['myString']), htmlspecialchars($_POST['testString']));
         $getStringResult = $myString -> getString();
         $indexOfResult = $myString -> indexOf();
