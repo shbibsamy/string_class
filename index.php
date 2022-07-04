@@ -38,19 +38,19 @@
         </div>
         <div class='function'>
             <h2>Method 2: trim()</h2>
-            <span>'$trimResult'</span>
+            <span>Your string without spaces before or after: '$trimResult'</span>
         </div>
         <div class='function'>
             <h2>Method 3: toUppercase()</h2>
-            <span>'$toUppercaseResult'</span>
+            <span>Your string in uppercase letters: '$toUppercaseResult'</span>
         </div>
         <div class='function'>
             <h2>Method 4: includes()</h2>
-            <span>'$includesResult'</span>
+            <span>Your string includes your test string: '$includesResult'</span>
         </div>
         <div class='function'>
             <h2>Method 5: substring()</h2>
-            <span>'$substringResult'</span>
+            <span>What's left of your string after your test string: '$substringResult'</span>
         </div>
     </div>
         ";

@@ -28,7 +28,7 @@
         }
 
         public function toUppercase() {
-            return strtoupper($this -> input);
+            return mb_strtoupper($this -> input);
         }
         
         public function includes() {
@@ -44,7 +44,6 @@
             if (($this -> includes() == 'true') && ($this -> indexOf() != 'false')) {
                 $indexOfTestString = $this -> indexOf();
                 $newStringLength = $indexOfTestString - strlen($this -> input);
-                // return $indexOfTestString = $this -> indexOf();
                 return substr($this -> input, $newStringLength);
             } else {
                 return $this -> input. ' does not contain your test string or is not a string.';
