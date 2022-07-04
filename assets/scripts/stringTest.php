@@ -12,7 +12,10 @@
         $testString = $myString -> setTestString(htmlspecialchars($_POST['testString']));
         $getStringResult = $myString -> getString();
         $indexOfResult = $myString -> indexOf();
+        $trimResult = $myString -> trim();
         $toUppercaseResult = $myString -> toUppercase();
+        $includesResult = $myString -> includes();
+        $substringResult = $myString -> substring();
     }
 
 ?>  

@@ -37,20 +37,20 @@
             <span>Your string was: '$getStringResult'. You searched for '$testString'. Your string was found at index: '$indexOfResult'.</span>
         </div>
         <div class='function'>
-            <h2>Method 2: typeof()</h2>
-            <span></span>
+            <h2>Method 2: trim()</h2>
+            <span>'$trimResult'</span>
         </div>
         <div class='function'>
             <h2>Method 3: toUppercase()</h2>
-            <span>$toUppercaseResult</span>
+            <span>'$toUppercaseResult'</span>
         </div>
         <div class='function'>
             <h2>Method 4: includes()</h2>
-            <span></span>
+            <span>'$includesResult'</span>
         </div>
         <div class='function'>
-            <h2>Method 5: at()</h2>
-            <span></span>
+            <h2>Method 5: substring()</h2>
+            <span>'$substringResult'</span>
         </div>
     </div>";
     ?>
