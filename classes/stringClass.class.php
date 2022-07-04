@@ -1,35 +1,38 @@
 <?php
     class StringClass {
-        protected $string_input;
-        protected $test_string;
-        protected $string_output;
+        private $input;
+        private $input_test;
+        private $string_output;
 
-        public function __construct($new_string, $new_test_string)
+        public function __construct($new_input, $new_input_test)
         {
-            htmlspecialchars($this -> string_input = $new_string);
-            htmlspecialchars($this -> test_string = $new_test_string);
+            $this -> input = $new_input;
+            $this -> input_test = $new_input_test;
         }
 
         public function getString() {
-            $this -> string_output = $this -> string_input;
-            return htmlspecialchars($this -> string_output);
+            $this -> string_output = $this -> input;
+            return $this -> string_output;
         }
 
         public function indexOf() {
-            return htmlspecialchars(strpos($this -> string_input, $this -> test_string));
+            if (gettype(strpos($this -> input, $this -> input_test)) == 'integer') {
+                return strpos($this -> input, $this -> input_test);
+            } else {
+                return 'false';
+            }
         }
 
         public function trim() {
-            return htmlspecialchars(trim($this -> string_input));
+            return trim($this -> input);
         }
 
         public function toUppercase() {
-            return htmlspecialchars(strtoupper($this -> string_input));
+            return strtoupper($this -> input);
         }
-
         
         public function includes() {
-            $result = htmlspecialchars(str_contains($this -> string_input, $this -> test_string));
+            $result = str_contains($this -> input, $this -> input_test);
             if ($result == 1) {
                 return 'true';
             } else {
@@ -38,10 +41,14 @@
         }
 
         public function substring() {
-            $indexOfTestString = $this -> indexOf();
-            $newStringLength = $indexOfTestString - strlen($this -> string_input);
-            // return $newStringLength;
-            return substr($this -> string_input, $newStringLength);
+            if (($this -> includes() == 'true') && ($this -> indexOf() != 'false')) {
+                $indexOfTestString = $this -> indexOf();
+                $newStringLength = $indexOfTestString - strlen($this -> input);
+                // return $indexOfTestString = $this -> indexOf();
+                return substr($this -> input, $newStringLength);
+            } else {
+                return $this -> input. ' does not contain your test string or is not a string.';
+            }
         }
 
     }

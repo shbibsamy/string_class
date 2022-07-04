@@ -52,7 +52,8 @@
             <h2>Method 5: substring()</h2>
             <span>'$substringResult'</span>
         </div>
-    </div>";
+    </div>
+        ";
     ?>
 </body>
 </html>
